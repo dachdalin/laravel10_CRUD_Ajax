@@ -15,5 +15,6 @@
   - បង្កើត `APP_KEY= ` ដោយប្រើ command `php artisan key:generate`
   - បង្កើត Table ដោយប្រើ command : `php artisan migrate` ប្រសិនបើមានបញ្ហា Error កើតឡើងយើងត្រូវទៅពិនិត្យថាតើមានឈ្មោះ Database នៅក្នុងប្រព័ន្ធ Database ហើយនៅ? បើគ្មានត្រូវបង្កើតអោយដូចឈ្មោះក្នុង `.env` file
 
-
+## 4-Start Server
+ -`php artisan serve`
 
