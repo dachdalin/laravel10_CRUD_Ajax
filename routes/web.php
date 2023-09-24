@@ -14,11 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/book',[BookController::class,'index']);
+
+Route::get('/',[BookController::class,'index']);
 Route::get('/show',[BookController::class,'fetchAll'])->name('show');
 Route::post('/store',[BookController::class,'store'])->name('store');
 Route::get('/edit',[BookController::class,'edit'])->name('edit');
