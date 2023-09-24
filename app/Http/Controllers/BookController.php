@@ -106,9 +106,11 @@ class BookController extends Controller
                 'status' => 404
             ]);
         }
-        $oldImagePath = public_path('images/uploads/' . $book->image);
-        if($book->image && file_exists($oldImagePath)){
-            @unlink($oldImagePath);
+        if($book->image){
+            $oldImagePath = public_path('images/uploads/' . $book->image);
+            if(file_exists($oldImagePath)){
+                @unlink($oldImagePath);
+            }
         }
         $book->delete();
         return response()->json([
