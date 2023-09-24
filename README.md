@@ -1,5 +1,5 @@
 ## 1-Clone Project
- - `git clone https://github.com/dalinICT/laravel10_EasyToBuy.git`
+ - `git clone https://github.com/dalinICT/laravel10_CRUD_Ajax.git`
 ## 2-Install Composer for Vendor
  - `composer install`
 ## 3-Configure Database
